@@ -1,0 +1,130 @@
+.qContainer {
+  background-color: #242526;
+  width: 70vw;
+  max-width: 1100px;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  row-gap: 5vh;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7); 
+  transition: all ease 0.2s;        
+}
+
+.qContainer:hover {
+  box-shadow: 0px 10px 20px 2px rgba(0,255,255,0.7);
+}
+
+.generateButton {
+  display: block;
+  background-color: rgba(0,255,255,0.7);
+  color: #000000;
+  border: 1px solid rgba(0,255,255,0.7);
+  font-family: 'Varela Round', sans-serif;
+  padding: 10px;
+  margin-top: 47vh;
+  position: absolute;
+  align-self: flex-end;
+  opacity: 1;
+  transition: .3s;
+}
+
+.generateButton:hover {
+  opacity: 0.6;
+}
+
+.generateButton:active {
+  color: #374045;
+  background-color: rgba(0,255,255,0.7);
+}
+
+.fade {
+  color: #EDEDED;
+  text-align: center;
+  font-family: "Literata", serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  padding-left: 250px; 
+  padding-right: 250px;
+  animation: fadeIn 3s;
+  animation-fill-mode: forwards;
+}
+
+.authorfade {
+  color: #EDEDED;
+  align-self: flex-end;
+  font-family: "Literata", serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  padding-right: 20px;
+  text-decoration: underline;
+  animation: fadeIn 3s;
+  animation-fill-mode: forwards;
+}
+
+.tweet {
+  align-self: flex-start;
+  color: rgba(0,255,255,0.7);
+  font-size: 2rem;
+  position: absolute; 
+  margin-top: 46vh;
+  opacity: .6;
+  transition: .3s;
+  margin-left: 3vw;
+}
+
+
+.tweet:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: rgba(0,255,255,0.7);
+}
+
+.ticon {
+  color: rgba(0,255,255,0.7);
+}
+
+.ticon:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: rgba(0,255,255,0.7);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .generateButton {
+    margin-top: 50vh;
+  }
+
+  .fade, .authorfade {
+    font-size: 1.4rem;
+  }
+
+  .fade {
+    padding-left: 10px; 
+    padding-right: 10px;
+  }
+
+  .tweet {
+    margin-top: 49vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fade {
+    padding-left: 10px; 
+    padding-right: 10px;
+  }
+}

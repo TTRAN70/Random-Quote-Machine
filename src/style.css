@@ -1,0 +1,29 @@
+html {
+  margin: 0; 
+  padding: 0;
+  background-color: #121212;
+}
+body {
+  margin: 0; 
+  padding: 0;
+  background-color: #121212;
+  display: flex; 
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+} 
+
+.qte {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.three {
+  display: flex; 
+  justify-content: center;
+}
+

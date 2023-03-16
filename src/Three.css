@@ -1,0 +1,43 @@
+
+p {
+  color: #EDEDED;
+  font-size: 3em;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  overflow: hidden; 
+  border-right: .1em solid #DA0037;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  text-align: center;
+  animation: 
+    typing  2.3s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  } 50% {
+    border-color: #DA0037;
+  }
+}
+
+.rapper {
+  margin-top: 60px;
+  display: inline-block;
+  
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 2em;
+  }
+}
