@@ -1,4 +1,4 @@
-# FreeCodeCamp-Random-Quote-Machine
+Random-Quote-Machine
 
 Click on the Generate Quote button to generate a new Quote!
 
